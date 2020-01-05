@@ -1,0 +1,507 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background: url("../img/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.head-item:hover {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: scale(1.15);
+  text-shadow: 0px 0px 10px whitesmoke;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.head-item {
+  margin-top: 10px;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-shadow: 0px 0px 10px dodgerblue;
+  font-size: 4.25em;
+}
+
+#headerTitle {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 90px;
+  text-shadow: 0px 0px 20px #8b7cc9;
+}
+
+#headerTitle:hover {
+  font-family: "Permanent Marker", cursive;
+  color: #8b7cc9;
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+
+#headerTag {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  text-shadow: 0px 0px 20px dodgerblue;
+}
+
+#headerLoc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 5px;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px rgb(192, 95, 3);
+}
+
+#typewriter {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 0px 0px 10px #8b7cc9;
+}
+.nav-item {
+  display: inline-block;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0.65;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.nav-item-ltr::before {
+  width: 0%;
+  bottom: 0px;
+}
+
+.nav-item::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.nav-item-ltr:hover::before {
+  width: 100%;
+}
+
+#mainNav {
+  margin-top: 20px;
+  border-radius: 25px;
+  background: #8a99ab;
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.75;
+}
+
+.section-title {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: #735ec7;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+#interests {
+  text-align: center;
+}
+
+.interest {
+  display: inline-block;
+  margin: 5%;
+  font-family: "Montserrat", sans-serif;
+  /*    font-weight: 300;*/
+  vertical-align: middle;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.interest span {
+  position: relative;
+  display: block;
+  top: 40%;
+  font-size: 20px;
+}
+
+#interest-1 span {
+  top: 30%;
+}
+
+#interest-1 {
+  background: #0d9139;
+}
+
+#interest-2 span {
+  top: 20%;
+}
+
+#interest-3 span {
+  top: 30%;
+}
+
+#interest-2 {
+  background: #ffae00;
+}
+
+#interest-3 {
+  background: #199dd5;
+}
+
+#intro-l1 {
+  width: 90%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+}
+
+.section-desc {
+  text-align: center;
+  width: 90%;
+  font-size: 20px;
+  color: #7e7e7e;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutMe-l1 {
+  width: 90%;
+  font-size: 20px;
+  color: #7e7e7e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerFlexSb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-section {
+  width: 80%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 0px 1px #000;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-text {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.expand {
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.skill-section-expandable {
+  display: none;
+}
+
+.skill-item {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #5aa297;
+  margin-top: 10px;
+  position: relative;
+  right: 20px;
+}
+
+.open {
+  box-shadow: 0px 0px 5px #656565;
+}
+
+.show-icon {
+  margin-left: 25px;
+  font-size: 28px;
+}
+
+.dev-pad {
+  margin-left: 30%;
+}
+
+#globe {
+  color: #194bb8;
+}
+
+#desktop {
+  color: #dfae0e;
+}
+
+#server {
+  color: #b33434;
+}
+
+#software {
+  color: #0a9433;
+}
+
+.divider-grey {
+  background: #c1c1c1;
+  height: 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.git-link,
+.git-link:link,
+.git-link:visited {
+  text-decoration: none;
+  color: #0292be;
+  font-weight: 400;
+}
+
+.git-link:hover {
+  color: #ff4500;
+}
+
+/* PORTFOLIO*/
+
+.text-center {
+  text-align: center;
+}
+
+.heading-title h3 {
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.p-top-40 {
+  padding-top: 40px;
+}
+
+.portfolio-l2 {
+  width: 75%;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 25px;
+  font-size: 20px;
+  color: #7e7e7e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.portfolio-btn:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+  display: inline-block;
+
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.portfolio-code-btn:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f121";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: 10px;
+}
+.portfolio-btn:hover,
+.portfolio-code-btn:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px dodgerblue;
+  font-weight: bold;
+}
+
+.portfolio-lang {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  color: orange;
+  font-weight: bold;
+}
+
+.lang-sep {
+  font-size: 0.3em;
+  margin-left: 3px;
+  margin-right: 3px;
+  color: black;
+  vertical-align: middle;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+#contactMe-l1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 22px;
+  color: #7e7e7e;
+  padding-bottom: 10vh;
+}
+
+.contactForm {
+  width: 75%;
+  margin: auto;
+}
+
+#btnContact:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1d8";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+#btnContact:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px dodgerblue;
+  font-weight: bold;
+}
+
+.footer {
+  margin: auto;
+  width: 100%;
+  background-color: rgb(180, 180, 180);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.circle-icon {
+  background: #8b7cc9;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.circle-icon:hover {
+  transform: scale(1.15);
+}
+
+#footerGit {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 1.8em;
+}
+
+#footerLinkedin {
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+#footerTag {
+  margin-top: 15px;
+}
+
+a,
+a:hover {
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    overflow: auto;
+  }
+
+  .skill-item {
+    right: 5px;
+  }
+
+  .skill-item .fas {
+    margin-left: 5px;
+  }
+
+  .skill-section-expandable {
+    font-size: 18px;
+  }
+
+  .skill-section-expandable .fas {
+    display: none;
+  }
+
+  .interest {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill-section-expandable {
+    display: block;
+  }
+
+  .interest span {
+    font-size: 14px;
+  }
+
+  .head-item {
+    display: none;
+  }
+
+  #headerTitle {
+    font-size: 45px;
+  }
+
+  #headerTag {
+    font-size: 15px;
+  }
+
+  #headerLoc{
+    font-size: 15px
+  }
+
+  #typewriter{
+    font-size:22.5px;
+  }
+}
