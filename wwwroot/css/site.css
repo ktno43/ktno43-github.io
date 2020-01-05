@@ -88,7 +88,7 @@
 }
 
 .nav-item:hover {
-  color: black;
+  color: #735ec7;
 }
 
 .nav-item-ltr::before {
@@ -101,7 +101,7 @@
   height: 3px;
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: #735ec7;
 }
 
 .nav-item-ltr:hover::before {
@@ -111,7 +111,7 @@
 #mainNav {
   margin-top: 20px;
   border-radius: 25px;
-  background: #8a99ab;
+  background-color: rgb(180, 180, 180);
   width: 70%;
   height: 50px;
   margin-left: auto;
@@ -282,6 +282,10 @@
   color: #0a9433;
 }
 
+#file {
+  color: rgb(156, 69, 156);
+}
+
 .divider-grey {
   background: #c1c1c1;
   height: 1px;
@@ -411,6 +415,7 @@
   margin: auto;
   width: 100%;
   background-color: rgb(180, 180, 180);
+  opacity: 0.75;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -497,11 +502,11 @@ textarea {
     font-size: 15px;
   }
 
-  #headerLoc{
-    font-size: 15px
+  #headerLoc {
+    font-size: 15px;
   }
 
-  #typewriter{
-    font-size:22.5px;
+  #typewriter {
+    font-size: 22.5px;
   }
 }
