@@ -28,7 +28,7 @@
   right: 0;
   text-align: center;
   text-shadow: 0px 0px 10px dodgerblue;
-  font-size: 4.25em;
+  font-size: 68px;
 }
 
 #headerTitle {
@@ -136,10 +136,10 @@
   display: inline-block;
   margin: 5%;
   font-family: "Montserrat", sans-serif;
-  /*    font-weight: 300;*/
   vertical-align: middle;
   height: 140px;
   width: 140px;
+  box-shadow: 0px 0px 10px #735ec7;
   border-radius: 100%;
   color: #fff;
   position: relative;
@@ -150,6 +150,7 @@
   display: block;
   top: 40%;
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #interest-1 span {
@@ -180,15 +181,15 @@
   width: 90%;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
   font-weight: 300;
+  font-style: italic;
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  color: #000;
+  color: #7e7e7e;
 }
 
-.section-desc {
+#tech-l1 {
   text-align: center;
   width: 90%;
   font-size: 20px;
@@ -202,7 +203,7 @@
 
 #aboutMe-l1 {
   width: 90%;
-  font-size: 20px;
+  font-size: 18px;
   color: #7e7e7e;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -229,11 +230,19 @@
 .skill-text {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
+  color: black;
 }
 
 .expand {
   font-size: 28px;
+  color: black;
   margin-right: 15px;
+}
+
+.contract {
+  font-size: 28px;
+  margin-right: 15px;
+  color: red;
 }
 
 .skill-section-expandable {
@@ -244,15 +253,18 @@
   width: 250px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 19px;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  color: #5aa297;
+  font-weight: 100;
+  color:#7e7e7e;
   margin-top: 10px;
   position: relative;
   right: 20px;
 }
 
+.squareCheck{
+  color: #735ec7;
+}
 .open {
   box-shadow: 0px 0px 5px #656565;
 }
@@ -296,34 +308,11 @@
   margin-bottom: 40px;
 }
 
-.git-link,
-.git-link:link,
-.git-link:visited {
-  text-decoration: none;
-  color: #0292be;
-  font-weight: 400;
-}
-
-.git-link:hover {
-  color: #ff4500;
-}
-
-/* PORTFOLIO*/
-
 .text-center {
   text-align: center;
 }
 
-.heading-title h3 {
-  letter-spacing: 2px;
-  font-weight: normal;
-}
-
-.p-top-40 {
-  padding-top: 40px;
-}
-
-.portfolio-l2 {
+#portfolio-l1 {
   width: 75%;
   margin: 0 auto;
   display: inline-block;
@@ -337,11 +326,22 @@
   margin-bottom: 20px;
 }
 
+.portfolioProj {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.portfolioDescr {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-family: "Montserrat", sans-serif;
+}
 .portfolio-btn:hover::after {
   font-family: "Font Awesome 5 Free";
   content: "\f101";
   display: inline-block;
-
   vertical-align: middle;
   font-weight: 900;
   margin-left: 10px;
@@ -357,7 +357,7 @@
 }
 .portfolio-btn:hover,
 .portfolio-code-btn:hover {
-  transform: scale(1.01);
+  transform: scale(1);
   box-shadow: 0px 0px 10px dodgerblue;
   font-weight: bold;
 }
@@ -365,13 +365,14 @@
 .portfolio-lang {
   margin-top: 10px;
   text-align: center;
-  font-size: 1.1em;
-  color: orange;
-  font-weight: bold;
+  font-size: 15px;
+  color: #735ec7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .lang-sep {
-  font-size: 0.3em;
+  font-size: 4px;
   margin-left: 3px;
   margin-right: 3px;
   color: black;
@@ -386,7 +387,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #7e7e7e;
   padding-bottom: 10vh;
 }
@@ -406,7 +407,7 @@
 }
 
 #btnContact:hover {
-  transform: scale(1.01);
+  transform: scale(1);
   box-shadow: 0px 0px 10px dodgerblue;
   font-weight: bold;
 }
@@ -422,6 +423,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#footerTag {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
 .circle-icon {
   background: #8b7cc9;
   padding: 15px;
@@ -435,12 +441,12 @@
 #footerGit {
   margin-top: 15px;
   margin-left: 15px;
-  font-size: 1.8em;
+  font-size: 28px;
 }
 
 #footerLinkedin {
   margin-top: 15px;
-  font-size: 1.8em;
+  font-size: 28px;
 }
 
 #footerTag {
@@ -452,29 +458,23 @@ a:hover {
   color: inherit;
 }
 
+#messageLine,
+#nameLine,
+#emailLine {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
 textarea {
   resize: none;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 850px) {
   body {
     overflow: auto;
   }
 
   .skill-item {
-    right: 5px;
-  }
-
-  .skill-item .fas {
-    margin-left: 5px;
-  }
-
-  .skill-section-expandable {
-    font-size: 18px;
-  }
-
-  .skill-section-expandable .fas {
-    display: none;
+    left: 15px;
   }
 
   .interest {
@@ -482,16 +482,11 @@ textarea {
     height: 90px;
   }
 
-  .skill-section-expandable {
-    display: block;
-  }
-
-  .interest span {
-    font-size: 14px;
-  }
-
-  .head-item {
+  #mainNav {
     display: none;
+  }
+  .head-item {
+    font-size: 34px;
   }
 
   #headerTitle {
@@ -508,5 +503,40 @@ textarea {
 
   #typewriter {
     font-size: 22.5px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+  #intro-l1,
+  #aboutMe-l1,
+  #tech-l1,
+  #contactMe-l1,
+  #portfolio-l1,
+  .portfolio-lang,
+  .portfolioDescr,
+  #messageLine,
+  #nameLine,
+  #emailLine,
+  .skill-item {
+    font-size: 12.5px;
+  }
+
+  .skill-text,
+  .interest span,
+  .portfolioProj {
+    font-size: 13px;
+  }
+
+  .show-icon,
+  .expand,
+  .contract {
+    font-size: 10px;
+  }
+
+  #footerGit,
+  #footerLinkedin,
+  #footerTag {
+    font-size: 15px;
   }
 }

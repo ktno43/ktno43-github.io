@@ -26,12 +26,16 @@ $(function() {
       $(expandable).slideUp(200);
       $(this).removeClass("open");
       var arrowU = $(this).find(".fa-chevron-up");
+      var expandU = $(this).find(".contract");
       arrowU.toggleClass("fa-chevron-up fa-chevron-down");
+      expandU.toggleClass("expand contract");
     } else {
       $(expandable).slideDown(200);
       $(this).addClass("open");
       var arrowD = $(this).find(".fa-chevron-down");
+      var expandD = $(this).find(".expand");
       arrowD.toggleClass("fa-chevron-up fa-chevron-down");
+      expandD.toggleClass("expand contract");
     }
   });
 
@@ -58,42 +62,6 @@ $(function() {
       case "portfolioItem":
         scrollTo("portfolio");
         break;
-    }
-  });
-
-  $("#contact-form").bootstrapValidator({
-    //        live: 'disabled',
-    message: "This value is not valid",
-    feedbackIcons: {
-      valid: "glyphicon glyphicon-ok",
-      invalid: "glyphicon glyphicon-remove",
-      validating: "glyphicon glyphicon-refresh"
-    },
-    fields: {
-      Name: {
-        validators: {
-          notEmpty: {
-            message: "The Name is required and cannot be empty"
-          }
-        }
-      },
-      email: {
-        validators: {
-          notEmpty: {
-            message: "The email address is required"
-          },
-          emailAddress: {
-            message: "The email address is not valid"
-          }
-        }
-      },
-      Message: {
-        validators: {
-          notEmpty: {
-            message: "The Message is required and cannot be empty"
-          }
-        }
-      }
     }
   });
 
