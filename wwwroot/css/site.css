@@ -256,13 +256,13 @@
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  color:#7e7e7e;
+  color: #7e7e7e;
   margin-top: 10px;
   position: relative;
   right: 20px;
 }
 
-.squareCheck{
+.squareCheck {
   color: #735ec7;
 }
 .open {
