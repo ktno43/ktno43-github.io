@@ -5,13 +5,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
-      <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato|Montserrat|Permanent+Marker&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
       <link rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css" />
       <link href="wwwroot/css/site.css" rel="stylesheet" />
    </head>
-   <body>
+   <body id="page-top">
       <header class="masthead">
          <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -24,24 +24,34 @@
                </div>
             </div>
          </div>
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="#page-top">KTN</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#aboutMe">About</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#techStack">Technology Stack</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link js-scroll-trigger" href="#contactMe">Contact</a>
+                   </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
       </header>
       <div class="container">
-         <nav class="navbar navbar-b navbar-expand-md sticky-top" id="mainNav">
-            <div class="navbar-collapse collapse justify-content-center" id="navbar">
-               <div class="nav-item nav-item-ltr text-nowrap" id="aboutItem">
-                  About
-               </div>
-               <div class="nav-item nav-item-ltr text-nowrap" id="techStackItem">
-                  Technology Stack
-               </div>
-               <div class="nav-item nav-item-ltr text-nowrap" id="portfolioItem">
-                  Portfolio
-               </div>
-               <div class="nav-item nav-item-ltr text-nowrap" id="contactItem">
-                  Contact
-               </div>
-            </div>
-         </nav>
          <div id="intro" data-aos="fade-down" data-aos-duration="1100">
             <div id="intro-l1">
                <i class="fas fa-quote-left"></i> Most good programmers do programming not because they expect to get paid

@@ -7,6 +7,22 @@ $(function() {
     loop: true
   });
 
+  $("body").scrollspy({
+    target: "#mainNav",
+    offset: 500
+  });
+
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 600) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+
   typewriter
     .changeDelay(80)
     .typeString("I am a software developer.")
@@ -39,30 +55,24 @@ $(function() {
     }
   });
 
-  $(".head-item").click(function() {
-    scrollTo("intro");
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+      if (target.length) {
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - 90
+          },
+          "slow"
+        );
+        return false;
+      }
+    }
   });
 
-  $(".nav-item").click(function() {
-    var id = $(this).attr("id");
-
-    switch (id) {
-      case "techStackItem":
-        scrollTo("techStack");
-        break;
-
-      case "aboutItem":
-        scrollTo("aboutMe");
-        break;
-
-      case "contactItem":
-        scrollTo("contactMe");
-        break;
-
-      case "portfolioItem":
-        scrollTo("portfolio");
-        break;
-    }
+  $(".head-item").click(function() {
+    scrollTo("intro");
   });
 
   function scrollTo(id) {
