@@ -6,7 +6,7 @@ var employees = [];
 
 function calculate() {
   "use strict";
-  var name = document.getElementById("firstname").value + ", " + document.getElementById("lastname").value;
+  var name = document.getElementById("lastname").value + ", " + document.getElementById("firstname").value;
   var departmentSelect = document.getElementById("select-department");
   var department = departmentSelect.options[departmentSelect.selectedIndex].value;
   var empId = Math.random()
