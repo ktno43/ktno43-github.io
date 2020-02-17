@@ -4,7 +4,7 @@ var employees = [];
 // 2 emp id
 // 3 hire date
 
-function calculate() {
+function addEmp() {
   "use strict";
   var name = document.getElementById("lastname").value + ", " + document.getElementById("firstname").value;
   var departmentSelect = document.getElementById("select-department");
@@ -18,6 +18,7 @@ function calculate() {
       .toString()
       .slice(2, 10);
   }
+
   var d = new Date();
   var week = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
   var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -46,14 +47,15 @@ function calculate() {
   document.getElementById("total-emps").innerHTML = totalEmps;
 
   document.getElementById("echo-result").classList.remove("display-none");
-  console.log(name + "\n" + department + "\n" + empId + "\n" + hireDate);
+
+  // console.log(name + "\n" + department + "\n" + empId + "\n" + hireDate);
 
   return false;
 }
 
 function init() {
   "use strict";
-  document.getElementById("usr-browser").innerHTML = "Something";
-  document.getElementById("theForm").onsubmit = calculate;
+  document.getElementById("user-browser").innerHTML = navigator.userAgent;
+  document.getElementById("theForm").onsubmit = addEmp;
 } // End of init() function.
 window.onload = init;

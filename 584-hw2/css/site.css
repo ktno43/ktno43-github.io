@@ -9,6 +9,7 @@ body {
 .display-none {
   display: none;
 }
+
 #emp-form {
   background: white;
   min-width: 15em;
@@ -22,12 +23,14 @@ body {
   font-weight: bold;
   background: #e8e8e8;
 }
+
 #browser {
   margin-top: 1em;
   width: 1em;
   height: 1em;
   margin-right: 1em;
 }
+
 #submit {
   font-size: 1em;
   background: #e8e8e8;
@@ -53,8 +56,12 @@ body {
   margin-bottom: 1em;
 }
 
-.data {
+.data-lbl {
   font-weight: bold;
   margin: 0px;
   padding: 0px;
+}
+
+.data {
+  font-weight: normal;
 }

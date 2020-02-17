@@ -19,7 +19,7 @@
 
           <label for="lastname">Last Name</label>
           <br />
-          <input type="text" name="lastname" id="lastname" accesskey="L" />
+          <input type="text" name="lastname" id="lastname" accesskey="L" required />
           <br />
 
           <label for="select-department">Department</label>
@@ -35,15 +35,16 @@
           <button type="submit" id="submit">Submit &rarr;</button>
         </fieldset>
       </form>
-      <div><img id="browser" src="./img/browser.png" /><span id="usr-browser"></span></div>
       <div id="echo-result" class="display-none">
         <div id="result-title">Employee Added</div>
-        <p class="data">Name: <span id="name"></span></p>
-        <p class="data">Department: <span id="department"></span></p>
-        <p class="data">Employee ID: <span id="emp-id"></span></p>
-        <p class="data">Hire Date: <span id="hire-date"></span></p>
-        <p class="data">Total Employees: <span id="total-emps"></span></p>
+        <p class="data-lbl">Name: <span id="name" class="data"></span></p>
+        <p class="data-lbl">Department: <span id="department" class="data"></span></p>
+        <p class="data-lbl">Employee ID: <span id="emp-id" class="data"></span></p>
+        <p class="data-lbl">Hire Date: <span id="hire-date" class="data"></span></p>
+        <p class="data-lbl">Total Employees: <span id="total-emps" class="data"></span></p>
       </div>
+
+      <div><img id="browser" src="./img/browser.png" /><span id="user-browser"></span></div>
     </div>
   </body>
 </html>
