@@ -11,7 +11,7 @@ body {
 }
 #emp-form {
   background: white;
-  min-width: 15%;
+  min-width: 15em;
   max-width: 25%;
   padding: 1em;
   margin: auto;
