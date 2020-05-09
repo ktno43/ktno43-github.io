@@ -457,10 +457,13 @@ textarea {
   #typewriter {
     font-size: 22.5px;
   }
-
+  .skill-section {
+    width: 78%;
+  }
   .section-title {
     font-size: 30px;
   }
+
   #intro-l1,
   #aboutMe-l1,
   #tech-l1,
@@ -478,7 +481,7 @@ textarea {
   .skill-text,
   .interest span,
   .portfolioProj {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .show-icon,
@@ -506,14 +509,16 @@ textarea {
   color: white;
   border: 0;
   background-color: #fed136;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #mainNav .navbar-brand.active,
@@ -529,8 +534,9 @@ textarea {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
