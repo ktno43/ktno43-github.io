@@ -503,8 +503,9 @@ textarea {
 
   #footerGit,
   #footerLinkedin,
-  #footerTag {
-    font-size: 15px;
+  #footerTag,
+  #footerResume {
+    font-size: 20px;
   }
   .contactForm {
     width: 100%;
