@@ -382,8 +382,12 @@
 }
 .circle-icon {
   background: #8b7cc9;
-  padding: 15px;
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
 }
 
 .circle-icon:hover {
@@ -399,6 +403,12 @@
 
 #footerLinkedin {
   margin-top: 15px;
+  font-size: 28px;
+}
+
+#footerResume {
+  margin-top: 15px;
+  margin-left: 15px;
   font-size: 28px;
 }
 
@@ -496,7 +506,7 @@ textarea {
   #footerTag {
     font-size: 15px;
   }
-  .contactForm{
+  .contactForm {
     width: 100%;
   }
 }
