@@ -1,18 +1,18 @@
-$(function() {
+$(function () {
   AOS.init();
 
   var typewriterDiv = document.getElementById("typewriter");
 
   var typewriter = new Typewriter(typewriterDiv, {
-    loop: true
+    loop: true,
   });
 
   $("body").scrollspy({
     target: "#mainNav",
-    offset: 500
+    offset: 500,
   });
 
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 600) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -35,7 +35,7 @@ $(function() {
     .pauseFor(2500)
     .start();
 
-  $(".skill-section").click(function() {
+  $(".skill-section").click(function () {
     var expandable = $(this).find(".skill-section-expandable");
 
     if ($(this).hasClass("open")) {
@@ -55,30 +55,32 @@ $(function() {
     }
   });
 
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top - 90
-          },
-          "slow"
-        );
-        return false;
-      }
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (event) {
+    var href = $(this).attr("href");
+    var bTopNav = !$("#mainNav").hasClass("navbar-shrink");
+    var padding = 0;
+    if (bTopNav) {
+      var bFar = href === "#portfolio" ? true : false;
+      padding = bTopNav && bFar ? 0 : 77;
     }
+    $("html, body").animate(
+      {
+        scrollTop: $(href).offset().top - 90 - padding,
+      },
+      "slow"
+    );
+
+    return false;
   });
 
-  $(".head-item").click(function() {
+  $(".head-item").click(function () {
     scrollTo("intro");
   });
 
   function scrollTo(id) {
     $("html,body").animate(
       {
-        scrollTop: $("#" + id).offset().top - 90
+        scrollTop: $("#" + id).offset().top - 90,
       },
       "slow"
     );
